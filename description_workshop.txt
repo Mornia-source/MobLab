@@ -1,0 +1,41 @@
+[h1]MobLab - 生物实验室 / Mob Laboratory[/h1]
+
+[h2]中文简介[/h2]
+MobLab 是一个"生怪工坊"模组：在生成怪物之前，先详细配置它的各项数值和行为，再用鼠标点击把它精确地放置到你想要的位置。
+
+[b]核心功能[/b]
+[list]
+[*]光标放置生成：选好生物后，光标会带着这个生物的真实大小贴图，你点哪里就精确生成在哪里，不再是"面朝方向一段距离外"这种模糊定位。
+[*]生成前自定义数值：生命、防御、攻击、击退抗性都可以在生成前手动调整，不必用原版数值。
+[*]"无AI"开关：可以让生成的生物完全静止——不移动、不攻击、不索敌；针对石巨人、毁灭者这类多体节 Boss 也做了专门处理，分节会正常显示但同样保持静止。
+[*]AI 类型覆盖：提供一份常见 AI 行为下拉列表（近战、飞行、被动、水母漂浮、爬墙等），可以让某个生物套用其它类型的移动方式。
+[*]生物浏览器：支持按名称搜索、按"全部 / BOSS / 城镇NPC / 模组"分类筛选，"模组"分类可以循环切换你安装的其它模组添加的生物。
+[*]按住 Shift 连续放置，一次配置好可以连续摆放多个同款生物。
+[*]自带一套轻量级自定义 UI（小圆角面板、可折叠工具条），默认收起，不遮挡画面。
+[/list]
+
+[b]目前限制[/b]
+[list]
+[*]生成功能目前仅支持单人模式，联机同步尚未实现。
+[/list]
+
+[hr][/hr]
+
+[h2]English Description[/h2]
+MobLab is a "mob spawning workshop" mod: configure a creature's stats and behavior in detail before it exists, then click exactly where you want it to appear.
+
+[b]Core Features[/b]
+[list]
+[*][b]Cursor-accurate placement:[/b] once you've picked an NPC, its true-to-scale sprite follows your cursor and spawns exactly where you click - no more "some distance in front of the player."
+[*][b]Pre-spawn stat editing:[/b] adjust life, defense, damage, and knockback resistance before the creature is placed, instead of being stuck with vanilla values.
+[*][b]"No AI" toggle:[/b] make a spawned creature completely inert - no movement, no attacks, no targeting. Multi-segment bosses (Golem, The Destroyer, etc.) are handled properly too: their extra pieces still appear, just as motionless as the main body.
+[*][b]AI style override:[/b] a curated dropdown of common AI behaviors (melee fighter, flying, passive, jellyfish drift, wall-climbing spider...) so a creature can move differently than its vanilla self.
+[*][b]NPC browser:[/b] search by name, or filter by All / Bosses / Town NPCs / Modded - the "Modded" filter cycles through NPCs added by your other installed mods.
+[*][b]Hold Shift[/b] while placing to keep spawning more of the same configured creature without reopening the menu.
+[*]Comes with its own lightweight UI (small rounded panels, a collapsible toolbar that starts tucked out of the way).
+[/list]
+
+[b]Current Limitations[/b]
+[list]
+[*]Spawning is single-player only for now; multiplayer sync isn't implemented yet.
+[/list]

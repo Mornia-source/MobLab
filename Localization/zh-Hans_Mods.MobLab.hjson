@@ -1,0 +1,51 @@
+# This file will automatically update with entries for new content after a build and reload.
+# Please read https://github.com/tModLoader/tModLoader/wiki/Localization to learn more about localization and these files.
+
+Hotbar: {
+	OpenSpawner: 打开生怪窗口
+	Collapse: 收起
+	Expand: 展开
+}
+
+Browser: {
+	All: 全部
+	Bosses: BOSS
+	Town: 城镇NPC
+	Modded: 模组
+	SearchPlaceholder: 搜索...
+	NoModdedNpcs: 没有找到模组生物
+}
+
+Config: {
+	Life: 生命
+	Defense: 防御
+	Damage: 攻击
+	Knockback: 击退抗性
+	HasAI: 拥有 AI（会移动/攻击）
+	AIDefault: 默认（使用该 NPC 原本的 AI）
+	Place: 放置
+	Cancel: 取消
+}
+
+Placement: {
+	HintText: 左键点击放置（按住 Shift 可连续放置），右键或 Esc 取消
+	MultiplayerUnsupported: MobLab 生怪功能目前仅支持单人模式
+}
+
+AIStyle: {
+	Fighter: Fighter（地面近战）
+	Flying: Flying（普通飞行）
+	Passive: Passive（被动/几乎不攻击）
+	Bat: Bat（蝙蝠式飞行）
+	Bird: Bird（鸟类飞行）
+	Vulture: Vulture（俯冲式飞行）
+	Jellyfish: Jellyfish（水母漂浮）
+	FlyingFish: FlyingFish（鱼跃式）
+	Firefly: Firefly（萤火虫漂浮）
+	Butterfly: Butterfly（蝴蝶漂浮）
+	Snail: Snail（蜗牛爬行）
+	Duck: Duck（鸭子式移动）
+	Spider: Spider（蜘蛛爬墙）
+}
+
+// Keybinds.ToggleMobLabHotbar.DisplayName: Toggle Mob Lab Hotbar

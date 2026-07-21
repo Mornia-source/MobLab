@@ -1,0 +1,51 @@
+# This file will automatically update with entries for new content after a build and reload.
+# Please read https://github.com/tModLoader/tModLoader/wiki/Localization to learn more about localization and these files.
+
+Hotbar: {
+	OpenSpawner: Open Mob Spawner
+	Collapse: Collapse
+	Expand: Expand
+}
+
+Browser: {
+	All: All
+	Bosses: Bosses
+	Town: Town
+	Modded: Modded
+	SearchPlaceholder: Search...
+	NoModdedNpcs: No modded NPCs found
+}
+
+Config: {
+	Life: Life
+	Defense: Defense
+	Damage: Damage
+	Knockback: Knockback Resist
+	HasAI: Has AI (moves/attacks)
+	AIDefault: Default (this NPC's own AI)
+	Place: Place
+	Cancel: Cancel
+}
+
+Placement: {
+	HintText: Left-click to place (hold Shift to place more), right-click or Esc to cancel
+	MultiplayerUnsupported: MobLab spawning is single-player only for now
+}
+
+AIStyle: {
+	Fighter: Fighter (ground melee)
+	Flying: Flying (basic flyer)
+	Passive: Passive (barely attacks)
+	Bat: Bat (flitting flight)
+	Bird: Bird (bird-like flight)
+	Vulture: Vulture (swooping flight)
+	Jellyfish: Jellyfish (floating drift)
+	FlyingFish: Flying Fish (leaping hops)
+	Firefly: Firefly (floating drift)
+	Butterfly: Butterfly (floating drift)
+	Snail: Snail (slow crawl)
+	Duck: Duck (waddling movement)
+	Spider: Spider (climbs walls)
+}
+
+Keybinds.ToggleMobLabHotbar.DisplayName: Toggle Mob Lab Hotbar

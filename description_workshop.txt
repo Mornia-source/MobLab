@@ -48,10 +48,12 @@ MobLab is a "mob spawning workshop" mod: configure a creature's stats and behavi
 [*]修复：关闭窗口后文本框仍占用键盘输入，导致无法操控角色（现在隐藏窗口、按 Esc/Enter、切出游戏、进出世界时都会自动失焦）。
 [*]修复：窗口隐藏时下拉列表自动收起；游戏窗口未聚焦时不再响应放置点击。
 [*]新增语言：English、简体中文、Español、Deutsch、Français。
+[*]更新：模组封面图标。
 [*]代码清理与优化。
 [*]Fixed: text boxes kept capturing keyboard input after their window was closed, leaving the player unable to move (focus is now released on hide, Esc/Enter, alt-tab, and world enter/exit).
 [*]Fixed: dropdowns now collapse when hidden; placement clicks are ignored while the game window is unfocused.
 [*]Added languages: English, Simplified Chinese, Spanish, German, French.
+[*]Updated: new mod cover icon.
 [*]General code cleanup.
 [/list]
 

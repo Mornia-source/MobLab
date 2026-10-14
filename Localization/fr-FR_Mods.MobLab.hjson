@@ -1,0 +1,49 @@
+# Localization: fr-FR
+Hotbar: {
+	OpenSpawner: Ouvrir le générateur de mobs
+	Collapse: Réduire
+	Expand: Développer
+}
+
+Browser: {
+	All: Tous
+	Bosses: Boss
+	Town: Ville
+	Modded: Mods
+	SearchPlaceholder: Rechercher...
+	NoModdedNpcs: Aucun PNJ de mod trouvé
+}
+
+Config: {
+	Life: Vie
+	Defense: Défense
+	Damage: Dégâts
+	Knockback: Résistance au recul
+	HasAI: A une IA (se déplace/attaque)
+	AIDefault: Par défaut (IA propre au PNJ)
+	Place: Placer
+	Cancel: Annuler
+}
+
+Placement: {
+	HintText: Clic gauche pour placer (maintenez Maj pour en placer plusieurs), clic droit ou Échap pour annuler
+	MultiplayerUnsupported: L'apparition MobLab est réservée au mode solo pour le moment
+}
+
+AIStyle: {
+	Fighter: Combattant (mêlée au sol)
+	Flying: Volant (vol basique)
+	Passive: Passif (attaque à peine)
+	Bat: Chauve-souris (vol erratique)
+	Bird: Oiseau (vol d'oiseau)
+	Vulture: Vautour (vol en piqué)
+	Jellyfish: Méduse (dérive flottante)
+	FlyingFish: Poisson volant (bonds)
+	Firefly: Luciole (dérive flottante)
+	Butterfly: Papillon (dérive flottante)
+	Snail: Escargot (reptation lente)
+	Duck: Canard (déhanchement)
+	Spider: Araignée (grimpe aux murs)
+}
+
+Keybinds.ToggleMobLabHotbar.DisplayName: Afficher/masquer la barre Mob Lab

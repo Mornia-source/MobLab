@@ -1,0 +1,49 @@
+# Localization: es-ES
+Hotbar: {
+	OpenSpawner: Abrir generador de mobs
+	Collapse: Contraer
+	Expand: Expandir
+}
+
+Browser: {
+	All: Todos
+	Bosses: Jefes
+	Town: Ciudad
+	Modded: Mods
+	SearchPlaceholder: Buscar...
+	NoModdedNpcs: No se encontraron NPC de mods
+}
+
+Config: {
+	Life: Vida
+	Defense: Defensa
+	Damage: Daño
+	Knockback: Resistencia al retroceso
+	HasAI: Tiene IA (se mueve/ataca)
+	AIDefault: Predeterminada (IA propia del NPC)
+	Place: Colocar
+	Cancel: Cancelar
+}
+
+Placement: {
+	HintText: Clic izquierdo para colocar (mantén Mayús para colocar más), clic derecho o Esc para cancelar
+	MultiplayerUnsupported: La generación de MobLab solo está disponible en un jugador por ahora
+}
+
+AIStyle: {
+	Fighter: Luchador (cuerpo a cuerpo en tierra)
+	Flying: Volador (vuelo básico)
+	Passive: Pasivo (apenas ataca)
+	Bat: Murciélago (vuelo errático)
+	Bird: Ave (vuelo de ave)
+	Vulture: Buitre (vuelo en picado)
+	Jellyfish: Medusa (deriva flotante)
+	FlyingFish: Pez volador (saltos)
+	Firefly: Luciérnaga (deriva flotante)
+	Butterfly: Mariposa (deriva flotante)
+	Snail: Caracol (arrastre lento)
+	Duck: Pato (andar bamboleante)
+	Spider: Araña (trepa paredes)
+}
+
+Keybinds.ToggleMobLabHotbar.DisplayName: Mostrar/ocultar barra de Mob Lab

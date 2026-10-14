@@ -1,6 +1,4 @@
-# This file will automatically update with entries for new content after a build and reload.
-# Please read https://github.com/tModLoader/tModLoader/wiki/Localization to learn more about localization and these files.
-
+# Localization: zh-Hans
 Hotbar: {
 	OpenSpawner: 打开生怪窗口
 	Collapse: 收起
@@ -33,19 +31,19 @@ Placement: {
 }
 
 AIStyle: {
-	Fighter: Fighter（地面近战）
-	Flying: Flying（普通飞行）
-	Passive: Passive（被动/几乎不攻击）
-	Bat: Bat（蝙蝠式飞行）
-	Bird: Bird（鸟类飞行）
-	Vulture: Vulture（俯冲式飞行）
-	Jellyfish: Jellyfish（水母漂浮）
-	FlyingFish: FlyingFish（鱼跃式）
-	Firefly: Firefly（萤火虫漂浮）
-	Butterfly: Butterfly（蝴蝶漂浮）
-	Snail: Snail（蜗牛爬行）
-	Duck: Duck（鸭子式移动）
-	Spider: Spider（蜘蛛爬墙）
+	Fighter: 战士（地面近战）
+	Flying: 飞行（普通飞行）
+	Passive: 被动（几乎不攻击）
+	Bat: 蝙蝠（蝙蝠式飞行）
+	Bird: 鸟（鸟类飞行）
+	Vulture: 秃鹫（俯冲式飞行）
+	Jellyfish: 水母（漂浮）
+	FlyingFish: 飞鱼（跃动）
+	Firefly: 萤火虫（漂浮）
+	Butterfly: 蝴蝶（漂浮）
+	Snail: 蜗牛（缓慢爬行）
+	Duck: 鸭子（摇摆移动）
+	Spider: 蜘蛛（爬墙）
 }
 
-// Keybinds.ToggleMobLabHotbar.DisplayName: Toggle Mob Lab Hotbar
+Keybinds.ToggleMobLabHotbar.DisplayName: 切换生物实验室工具栏

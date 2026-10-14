@@ -1,3 +1,5 @@
 MobLab（生物实验室）：生成怪物前先配置生命/防御/攻击/AI，再用鼠标点击精确放置到你想要的位置。支持"无AI"静止模式（含多体节Boss）、AI行为覆盖、按模组分类浏览生物库。目前仅支持单人模式。
 
 MobLab (Mob Laboratory): configure a creature's stats and AI before it spawns, then place it exactly where you click. Supports a "no AI" inert mode (multi-segment bosses included), AI style overrides, and browsing NPCs by mod. Single-player only for now.
+
+Languages: English, 简体中文, Español, Deutsch, Français.

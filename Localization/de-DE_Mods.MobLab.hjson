@@ -1,0 +1,49 @@
+# Localization: de-DE
+Hotbar: {
+	OpenSpawner: Mob-Spawner öffnen
+	Collapse: Einklappen
+	Expand: Ausklappen
+}
+
+Browser: {
+	All: Alle
+	Bosses: Bosse
+	Town: Stadt
+	Modded: Mods
+	SearchPlaceholder: Suchen...
+	NoModdedNpcs: Keine Mod-NPCs gefunden
+}
+
+Config: {
+	Life: Leben
+	Defense: Verteidigung
+	Damage: Schaden
+	Knockback: Rückstoßresistenz
+	HasAI: Hat KI (bewegt sich/greift an)
+	AIDefault: Standard (eigene KI des NPCs)
+	Place: Platzieren
+	Cancel: Abbrechen
+}
+
+Placement: {
+	HintText: Linksklick zum Platzieren (Umschalt gedrückt halten für mehr), Rechtsklick oder Esc zum Abbrechen
+	MultiplayerUnsupported: MobLab-Spawning ist vorerst nur im Einzelspielermodus verfügbar
+}
+
+AIStyle: {
+	Fighter: Kämpfer (Nahkampf am Boden)
+	Flying: Flieger (einfacher Flug)
+	Passive: Passiv (greift kaum an)
+	Bat: Fledermaus (flatternder Flug)
+	Bird: Vogel (vogelartiger Flug)
+	Vulture: Geier (Sturzflug)
+	Jellyfish: Qualle (schwebendes Treiben)
+	FlyingFish: Fliegender Fisch (springende Sprünge)
+	Firefly: Glühwürmchen (schwebendes Treiben)
+	Butterfly: Schmetterling (schwebendes Treiben)
+	Snail: Schnecke (langsames Kriechen)
+	Duck: Ente (watschelnde Bewegung)
+	Spider: Spinne (klettert an Wänden)
+}
+
+Keybinds.ToggleMobLabHotbar.DisplayName: Mob-Lab-Leiste umschalten

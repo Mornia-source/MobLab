@@ -14,7 +14,25 @@ namespace MobLab.UI
 	internal class UITextbox : UIView
 	{
 		public string Text = "";
-		public bool Selected;
+		private static UITextbox focused;
+
+		private bool selected;
+		public bool Selected {
+			get => selected;
+			set {
+				if (selected == value)
+					return;
+				selected = value;
+				if (value) {
+					if (focused != null && focused != this)
+						focused.selected = false;
+					focused = this;
+				}
+				else if (focused == this) {
+					focused = null;
+				}
+			}
+		}
 		public bool NumericOnly;
 		public bool AllowDecimal;
 		public string Placeholder = "";
@@ -24,7 +42,20 @@ namespace MobLab.UI
 		public override float Width { get; set; } = 120f;
 		public override float Height { get; set; } = 24f;
 
+		// Releases keyboard focus from whichever box has it (world exit, UI teardown).
+		public static void BlurAll() {
+			if (focused != null)
+				focused.Selected = false;
+		}
+
+		protected override void OnHidden() => Selected = false;
+
 		public override void Update() {
+			// A real application-level focus loss or Escape/Enter also ends editing.
+			if (Selected && (!Main.hasFocus || Main.keyState.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Escape) || Main.keyState.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Enter))) {
+				Selected = false;
+			}
+
 			bool freshLeftClick = MouseLeftDown && !MouseLeftDownPrevious;
 			if (freshLeftClick)
 				Selected = MouseInside;

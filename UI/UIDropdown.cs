@@ -46,6 +46,8 @@ namespace MobLab.UI
 			OnLeftClick += (s, e) => expanded = !expanded;
 		}
 
+		protected override void OnHidden() => expanded = false;
+
 		public override void Update() {
 			base.Update();
 

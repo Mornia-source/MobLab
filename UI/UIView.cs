@@ -56,7 +56,20 @@ namespace MobLab.UI
 		public Color ForegroundColor { get; set; } = Color.White;
 		public Color BackgroundColor { get; set; } = Color.White;
 		public float Opacity { get; set; } = 1f;
-		public bool Visible { get; set; } = true;
+		private bool visible = true;
+
+		// Hiding a node also notifies every descendant (OnHidden), so focus-holding widgets
+		// such as UITextbox release it instead of silently swallowing keyboard input.
+		public bool Visible {
+			get => visible;
+			set {
+				if (visible == value)
+					return;
+				visible = value;
+				if (!value)
+					NotifyHidden();
+			}
+		}
 		public bool BlocksWorldClicks { get; set; } = true;
 		public object Tag { get; set; }
 
@@ -104,6 +117,15 @@ namespace MobLab.UI
 			Children.Add(child);
 		}
 
+		private void NotifyHidden() {
+			OnHidden();
+			foreach (var child in Children)
+				child.NotifyHidden();
+		}
+
+		// Called when this node, or any ancestor, becomes invisible.
+		protected virtual void OnHidden() { }
+
 		public void RemoveChild(UIView child) => childrenToRemove.Add(child);
 
 		public void RemoveAllChildren() => Children.Clear();
@@ -139,8 +161,12 @@ namespace MobLab.UI
 		}
 
 		public virtual void Update() {
-			for (int i = Children.Count - 1; i >= 0; i--)
-				Children[i].Update();
+			// Invisible nodes are neither updated nor hit-tested, so a hidden window can
+			// never react to input.
+			for (int i = Children.Count - 1; i >= 0; i--) {
+				if (Children[i].Visible)
+					Children[i].Update();
+			}
 
 			if (childrenToRemove.Count > 0) {
 				foreach (var child in childrenToRemove)

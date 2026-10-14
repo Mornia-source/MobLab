@@ -39,7 +39,7 @@ namespace MobLab.Spawning
 			prevRight = rightDown;
 			prevEscape = escapeDown;
 
-			if (!Active)
+			if (!Active || !Main.hasFocus)
 				return;
 
 			if (rightClick || escapePress) {
@@ -71,7 +71,8 @@ namespace MobLab.Spawning
 
 			// Holding Shift keeps the same configured NPC on the cursor for repeated
 			// placement, instead of returning to the browser after every single spawn.
-			bool keepPlacing = Keyboard.GetState().IsKeyDown(Keys.LeftShift) || Keyboard.GetState().IsKeyDown(Keys.RightShift);
+			var keys = Keyboard.GetState();
+			bool keepPlacing = keys.IsKeyDown(Keys.LeftShift) || keys.IsKeyDown(Keys.RightShift);
 			if (!keepPlacing)
 				Cancel();
 		}
@@ -104,7 +105,6 @@ namespace MobLab.Spawning
 			Main.LocalPlayer.cursorItemIconEnabled = false;
 
 			string hint = MobLab.Text("Placement.HintText");
-			var font = FontAssets.MouseText.Value;
 			Vector2 hintPos = position + new Vector2(20f, 20f);
 			Utils.DrawBorderString(spriteBatch, hint, hintPos, Color.White, 0.85f);
 		}

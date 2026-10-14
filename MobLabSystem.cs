@@ -86,6 +86,7 @@ namespace MobLab
 				return;
 
 			placementController?.Cancel();
+			UITextbox.BlurAll();
 		}
 
 		public void ToggleHotbar() {
@@ -123,8 +124,10 @@ namespace MobLab
 		}
 
 		private bool DrawUiLayer() {
-			if (Main.gameMenu || root == null)
+			if (Main.gameMenu || root == null) {
+				UITextbox.BlurAll();
 				return true;
+			}
 
 			root.UpdateRoot();
 			root.Draw(Main.spriteBatch);
@@ -148,6 +151,7 @@ namespace MobLab
 
 		public override void Unload() {
 			Instance = null;
+			UITextbox.BlurAll();
 			root = null;
 			hotbar = null;
 			npcSelectWindow = null;

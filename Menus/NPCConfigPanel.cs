@@ -48,7 +48,6 @@ namespace MobLab.Menus
 		private readonly UITextButton cancelButton;
 
 		public event Action<StatOverrides> PlaceRequested;
-		public event Action CancelRequested;
 
 		public NPCConfigPanel() {
 			CanMove = true;
@@ -67,10 +66,10 @@ namespace MobLab.Menus
 			AddChild(preview);
 
 			float y = Spacing + 4f + 42f + 12f;
-			lifeBox = AddStatRow(MobLab.Text("Config.Life"), ref y);
-			defenseBox = AddStatRow(MobLab.Text("Config.Defense"), ref y);
-			damageBox = AddStatRow(MobLab.Text("Config.Damage"), ref y);
-			knockbackBox = AddStatRow(MobLab.Text("Config.Knockback"), ref y, allowDecimal: true);
+			lifeBox = AddStatRow(ref y);
+			defenseBox = AddStatRow(ref y);
+			damageBox = AddStatRow(ref y);
+			knockbackBox = AddStatRow(ref y, allowDecimal: true);
 
 			y += 4f;
 			hasAiCheckbox = new UICheckbox(true) { Position = new Vector2(Spacing, y) };
@@ -81,7 +80,6 @@ namespace MobLab.Menus
 			aiDropdown.Options.Add(new UIDropdown.Option(MobLab.Text("Config.AIDefault"), null));
 			foreach (var style in CuratedAiStyles)
 				aiDropdown.Options.Add(new UIDropdown.Option(MobLab.Text("AIStyle." + style.Key), style.Style));
-			y += 30f;
 
 			placeButton = new UITextButton(MobLab.Text("Config.Place"), (Width - Spacing * 2f - 8f) / 2f, 28f);
 			placeButton.Position = new Vector2(Spacing, Height - Spacing - placeButton.Height);
@@ -98,7 +96,7 @@ namespace MobLab.Menus
 			AddChild(aiDropdown);
 		}
 
-		private UITextbox AddStatRow(string label, ref float y, bool allowDecimal = false) {
+		private UITextbox AddStatRow(ref float y, bool allowDecimal = false) {
 			var box = new UITextbox {
 				NumericOnly = true,
 				AllowDecimal = allowDecimal,
@@ -148,7 +146,6 @@ namespace MobLab.Menus
 		private void Cancel() {
 			template = null;
 			Visible = false;
-			CancelRequested?.Invoke();
 		}
 
 		private static int ParseIntOrDefault(string text, int fallback, int min) {
